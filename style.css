@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header{
+    text-align: center;
+    background-color: #007bff;
+}
+.header h1{
+    padding: 10px;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.search img{
+    width: 30px;
+    cursor: pointer;
+}
+#cityName{
+    outline: 0px;
+    padding-right: 5px;
+    background-color: #007bff;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+}
+#cityName::placeholder{
+    color: white;
+    font-weight: bolder;
+}
+
+.sectionOne{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 75%;
+    text-align: center;
+    padding: 10px;
+}
+.main h2{
+    text-align: center;
+}
+
+.hours{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.item:hover{
+    border: 3px solid black ;
+}
+.item-img{
+    width: 50px;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
