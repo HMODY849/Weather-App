@@ -49,7 +49,7 @@ if (!originalCurrent) return;
     let t = originalCurrent.currentConditions.temp;
     if (unit === "C") t = fahrenheitToCelsius(t);
 
-    temp.innerHTML = `درجة الحرارة: ${t.toFixed(1)}${unit}ْ`;
+    temp.innerHTML = `درجة الحرارة: ${t.toFixed(1)}${unit}`;
     time.innerHTML = `الساعة: ${originalCurrent.currentConditions.datetime.slice(0, 5)}`;
     city.innerHTML = originalCurrent.address;
     date.innerHTML = nowDate;
@@ -76,7 +76,7 @@ if (!originalCurrent) return;
             <div class="item">
                 <p>الساعة: ${originalCurrent.days[0].hours[h].datetime.slice(0,5)}</p>
                 <img src="${imgSrc}" class="item-img">
-                <p>درجة الحرارة: ${hourlyTemp.toFixed(1)}${unit}ْ</p>
+                <p>درجة الحرارة: ${hourlyTemp.toFixed(1)}${unit}</p>
             </div>
         `;
     }
@@ -107,7 +107,7 @@ if (!originalCurrent) return;
             <div class="item">
                 <p>${dayFormat}</p>
                 <img src="${imgSrc}" class="item-img">
-                <p>درجة الحرارة: ${dayTemp.toFixed(1)}${unit}ْ</p>
+                <p>درجة الحرارة: ${dayTemp.toFixed(1)}${unit}</p>
             </div>
         `;
     }
