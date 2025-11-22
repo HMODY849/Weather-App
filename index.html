@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Weather App</title>
 </head>
@@ -10,83 +11,30 @@
     <div class="main">
         <div class="header">
             <h1>أحوال الطقس</h1>
+            <div class="unit">
+                <h3 id="F">F</h3>
+                <h3 id="C">C</h3>
+            </div>
         </div>
         <div class="search">
             <input type="text" id="cityName" placeholder="اكتب اسم الدولة هنا">
-            <img src="./img/search.png">
+            <img src="./img/search.png" id="search">
         </div>
         <div class="sectionOne">
-                <h1>لبنان, بيروت</h1>
-                <h3>درجة الحرارة: 10</h3>
-                <h3>الرياح: 5mph</h3>
-                <h3>درجة الرطوبة: %30</h3>
+                <h1 id="city"></h1>
+                <h2 id="date"></h2>
+                <h3 id="time"></h3>
+                <h3 id="temp"></h3>
+                <h3 id="wind"></h3>
+                <h3 id="humdity"></h3>
+                <h3 id="sunrise"></h3>
+                <h3 id="sunset"></h3>
         </div>
         <h2>توقعات الطقس للساعات القادمة</h2>
-        <div class="hours">
-            <div class="item">
-               <p>الساعة: 7</p>
-               <img src="./img/sun.png" class="item-img">
-               <p>درجة الحرارة: 20</p>
-            </div>
-            <div class="item">
-               <p>الساعة: 7</p>
-               <img src="./img/sun.png" class="item-img">
-               <p>درجة الحرارة: 20</p>
-            </div><div class="item">
-               <p>الساعة: 7</p>
-               <img src="./img/sun.png" class="item-img">
-               <p>درجة الحرارة: 20</p>
-            </div><div class="item">
-               <p>الساعة: 7</p>
-               <img src="./img/sun.png" class="item-img">
-               <p>درجة الحرارة: 20</p>
-            </div><div class="item">
-               <p>الساعة: 7</p>
-               <img src="./img/sun.png" class="item-img">
-               <p>درجة الحرارة: 20</p>
-            </div><div class="item">
-               <p>الساعة: 7</p>
-               <img src="./img/sun.png" class="item-img">
-               <p>درجة الحرارة: 20</p>
-            </div>
+        <div class="hours" id="hours">
         </div>
         <h2>توقعات الطقس للأيام القادمة</h2>
-        <div class="days">
-            <div class="item">
-               <p>الأحد</p>
-               <img src="./img/clouds.png" class="item-img">
-               <p>درجة الحرارة: 15</p>
-            </div>
-            <div class="item">
-               <p>الأثنين</p>
-               <img src="./img/clouds.png" class="item-img">
-               <p>درجة الحرارة: 15</p>
-            </div>
-            <div class="item">
-               <p>الثلاثاء</p>
-               <img src="./img//thunderstorm.png" class="item-img">
-               <p>درجة الحرارة: 15</p>
-            </div>
-            <div class="item">
-               <p>الأربعاء</p>
-               <img src="./img/rainy-day.png" class="item-img">
-               <p>درجة الحرارة: 15</p>
-            </div>
-            <div class="item">
-               <p>الخميس</p>
-               <img src="./img/sun.png" class="item-img">
-               <p>درجة الحرارة: 15</p>
-            </div>
-            <div class="item">
-               <p>الجمعة</p>
-               <img src="./img/clouds.png" class="item-img">
-               <p>درجة الحرارة: 15</p>
-            </div>
-            <!-- <div class="item">
-               <p>السبت</p>
-               <img src="./img/rainy-day.png" class="item-img">
-               <p>درجة الحرارة: 15</p>
-            </div> -->
+        <div class="days" id="days">
         </div>
         <footer>حقوق الطبع و النشر محفوظة 2025</footer>
     </div>
